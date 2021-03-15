@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 }
-footer {
+#footer {
 	background-color: #39add1;
 	display: flex;
 	grid-column: 1 / -1;
@@ -41,4 +41,12 @@ main {
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 90%;
+}
+
+.bigfont{
+	font-size: xx-large;
+}
+
+.regularfont{
+	font-size: 100%;
 }
