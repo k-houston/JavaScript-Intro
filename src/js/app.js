@@ -16,7 +16,7 @@ function changeH1() {
      h1.innerText = newText;
      return newText;
 }
-changeH1()
+// changeH1()
 
 //feature 2
 function changeli_OnHover(){
@@ -32,19 +32,21 @@ function changeli_OnHover(){
     function Decreasefontsize(){
         this.classList.remove("bigfont");
     } 
-    changeli_OnHover();
+    // changeli_OnHover()
 
 // feature 3
 function addElement(){
     let newElement = document.createElement("h3");
     newElement.innerText = "New Text";
 
+    let header = document.getElementById('');
+
     let main = document.getElementsByTagName("main")[0];
     main.prepend(newElement);
 
     return newElement;
 }
-addElement();
+// addElement()
 
  // feature 4
 function changeFooterBackground(){
@@ -56,17 +58,16 @@ function changeFooterBackground(){
         document.getElementById("footer").style.backgroundColor = "#39add1";
     });
 }
-changeFooterBackground()
+// changeFooterBackground()
 
 // feature 5
 function changeFontInMain(){
-    document.querySelector('main').addEventListener('click', changeFontSize);
-
-    function changeFontSize(){
-        document.querySelector('main').style.fontSize = "35px";
-    }
+    let mainPara = document.querySelectorAll('main > p');
+        mainPara.forEach(function(item){
+            item.addEventListener('click', Increasefontsize);
+});
 }
-changeFontInMain()
+// changeFontInMain()
 
 // feature 6
 function changeFooterTextOnClick(){
@@ -79,14 +80,14 @@ function changeFooterTextOnClick(){
         footer.innerText = ourNewText.innerHTML;
     });
 }
-changeFooterTextOnClick();
+// changeFooterTextOnClick()
 
 // feature 7
 function removeH1Element(){
     let h1 = document.getElementById("head");
   h1.remove(); 
 }
-removeH1Element()
+// removeH1Element()
 
 // feature 8
  function addToH1_InHeader() {
@@ -96,16 +97,17 @@ removeH1Element()
      let newHeader = document.getElementsByTagName("header")[0];
      newHeader.prepend(newH1);
 }
-addToH1_InHeader()
+// addToH1_InHeader()
 
 // feature 9
 function changeText_Of_ParagraphTag_InMain() {
     document.getElementsByTagName("p")[1].innerHTML = "Change the Text of This Paragraph!";
 }
-changeText_Of_ParagraphTag_InMain()
+// changeText_Of_ParagraphTag_InMain()
 
 // feature 10
-function changeH1Size() {
-    
+function changeHeaderSize() {
+    document.getElementsByTagName('header')[0].style.height = "200px";
+    document.getElementsByTagName('header')[0].style.display = 'grid';
 }
-changeH1Size()
+// changeHeaderSize()
