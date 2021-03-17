@@ -22,9 +22,10 @@ describe('changeH1', function() {
 
 // test feature 9 
 describe('changeText_Of_ParagraphTag_InMain', function(){
-        
+    let paraChange = document.getElementsByTagName("p")[1];
+        paraChange.innerHTML = "Change the Text of This Paragraph!";
 
     it('returns', function() {
-        expect(changeText_Of_ParagraphTag_InMain()).toEqual("Change the Text of This Paragraph!");
+        expect(changeText_Of_ParagraphTag_InMain()).toEqual(paraChange);
     })
 })

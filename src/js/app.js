@@ -101,7 +101,10 @@ function removeH1Element(){
 
 // feature 9
 function changeText_Of_ParagraphTag_InMain() {
-    document.getElementsByTagName("p")[1].innerHTML = "Change the Text of This Paragraph!";
+    let paraChange = document.getElementsByTagName("p")[1];
+        paraChange.innerHTML = "Change the Text of This Paragraph!";
+
+        return paraChange;
 }
 // changeText_Of_ParagraphTag_InMain()
 
