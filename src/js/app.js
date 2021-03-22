@@ -16,7 +16,6 @@ function changeH1() {
      h1.innerText = newText;
      return newText;
 }
-// changeH1()
 
 //feature 2
 function changeli_OnHover(){
@@ -32,7 +31,6 @@ function changeli_OnHover(){
     function Decreasefontsize(){
         this.classList.remove("bigfont");
     } 
-    // changeli_OnHover()
 
 // feature 3
 function addElement(){
@@ -46,7 +44,6 @@ function addElement(){
 
     return newElement;
 }
-// addElement()
 
  // feature 4
 function changeFooterBackground(){
@@ -58,7 +55,6 @@ function changeFooterBackground(){
         document.getElementById("footer").style.backgroundColor = "#39add1";
     });
 }
-// changeFooterBackground()
 
 // feature 5
 function changeFontInMain(){
@@ -67,7 +63,6 @@ function changeFontInMain(){
             item.addEventListener('click', Increasefontsize);
 });
 }
-// changeFontInMain()
 
 // feature 6
 function changeFooterTextOnClick(){
@@ -80,14 +75,12 @@ function changeFooterTextOnClick(){
         footer.innerText = ourNewText.innerHTML;
     });
 }
-// changeFooterTextOnClick()
 
 // feature 7
 function removeH1Element(){
     let h1 = document.getElementById("head");
   h1.remove(); 
 }
-// removeH1Element()
 
 // feature 8
  function addToH1_InHeader() {
@@ -97,7 +90,6 @@ function removeH1Element(){
      let newHeader = document.getElementsByTagName("header")[0];
      newHeader.prepend(newH1);
 }
-// addToH1_InHeader()
 
 // feature 9
 function changeText_Of_ParagraphTag_InMain() {
@@ -106,11 +98,9 @@ function changeText_Of_ParagraphTag_InMain() {
 
         return paraChange;
 }
-// changeText_Of_ParagraphTag_InMain()
 
 // feature 10
 function changeHeaderSize() {
     document.getElementsByTagName('header')[0].style.height = "200px";
     document.getElementsByTagName('header')[0].style.display = 'grid';
 }
-// changeHeaderSize()
